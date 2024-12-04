@@ -3,3 +3,15 @@
 @import "placeholders";
 @import "mixins";
 
+body{
+    @include w-h(100%, 50px);
+    div{
+        @include w-h(400px, 50px);
+        @include go-flex(row, space-between);
+        margin: 10px 5px 5px 138px;
+    }
+    p{
+        font-size: $md-font-size;
+        font-weight: 700;
+    }
+}
