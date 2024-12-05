@@ -85,10 +85,17 @@ main {
     .left-side{
       @include go-flex(column, center, center, wrap);
       @include w-h(760px, 960px);
-      img{
+      .img{
         @include w-h(758px, 430px);
         margin: 10px;
         border-radius: 10px;
+        background-image: url(../img/ggb.png);
+        background-size: cover;
+        @extend %center-element;
+        p {
+          color: $secondary-color;
+          font-size: $lg-font-size;
+        }
       }
     }
     .right-side{
